@@ -1,4 +1,4 @@
-import * as __wbg_star0 from './snippets/wasm-rust-17c3905acb888efa/inline0.js';
+import * as __wbg_star0 from './snippets/wasm-trunk-vanilla-16414769075dcd74/inline0.js';
 
 let wasm;
 
@@ -220,7 +220,7 @@ async function load(module, imports) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('index-abd08041d091388c_bg.wasm', import.meta.url);
+        input = new URL('index-22264b0565f1af3a_bg.wasm', import.meta.url);
     }
     const imports = {};
     imports.wbg = {};
@@ -307,7 +307,7 @@ async function init(input) {
     imports.wbg.__wbindgen_throw = function(arg0, arg1) {
         throw new Error(getStringFromWasm0(arg0, arg1));
     };
-    imports['./snippets/wasm-rust-17c3905acb888efa/inline0.js'] = __wbg_star0;
+    imports['./snippets/wasm-trunk-vanilla-16414769075dcd74/inline0.js'] = __wbg_star0;
 
     if (typeof input === 'string' || (typeof Request === 'function' && input instanceof Request) || (typeof URL === 'function' && input instanceof URL)) {
         input = fetch(input);
